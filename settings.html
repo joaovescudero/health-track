@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" >
+  <head>
+    <meta name="description" content="Health Track">
+    <meta name="author" content="João Escudero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <title>Health Track</title>
+  </head>
+
+  <body class="h-100">
+    <div class="d-flex flex-column justify-content-center h-100">
+      <div class="back">
+        <button
+            class="btn"
+            onclick="document.location.assign('dashboard.html')"
+        >
+          <img src="images/back.png" width="30" height="30" alt="Voltar" />
+        </button>
+      </div>
+      <div class="align-self-center container mt-5">
+        <div class="mb-4">
+          <h4>Mudar configurações</h4>
+        </div>
+        <div class="mb-2">
+          <b>Email:</b> rm77997@fiap.com.br <i class="fas fa-edit ml-2"></i>
+        </div>
+        <div class="mb-2">
+          <b>Sexo:</b> Masculino <i class="fas fa-edit ml-2"></i>
+        </div>
+        <div class="mb-2">
+          <b>Idade:</b> 20 <i class="fas fa-edit ml-2"></i>
+        </div>
+        <div class="mb-4">
+          <b>Altura:</b> 1,72m <i class="fas fa-edit ml-2"></i>
+        </div>
+        <div class="row">
+          <button
+              type="button"
+              data-toggle="modal"
+              data-target="#passwordModal"
+              class="btn btn-success mb-4 w-100 mt-md-4 mr-4 ml-4"
+          >
+            Alterar senha
+          </button>
+        </div>
+        <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="passwordModalTitle">Alterar senha</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="old-password">Senha atual</label>
+                  <input type="password" class="form-control" id="old-password" placeholder="Senha atual">
+                </div>
+                <div class="form-group">
+                  <label for="new-password">Nova Senha</label>
+                  <input type="password" class="form-control" id="new-password" placeholder="Nova senha">
+                </div>
+                <div class="form-group">
+                  <label for="new-password-repeat">Repetir nova Senha</label>
+                  <input type="password" class="form-control" id="new-password-repeat" placeholder="Repetir nova senha">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Alterar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

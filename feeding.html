@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" >
+  <head>
+    <meta name="description" content="Health Track">
+    <meta name="author" content="João Escudero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <title>Health Track</title>
+  </head>
+
+  <body class="h-100">
+    <div class="d-flex flex-column justify-content-center h-100">
+      <div class="settings">
+        <button
+            class="btn"
+            onclick="document.location.assign('settings.html')"
+        >
+          <img src="images/settings.png" width="30" height="30" alt="Configurações" />
+        </button>
+      </div>
+      <div class="back">
+        <button
+            class="btn"
+            onclick="document.location.assign('dashboard.html')"
+        >
+          <img src="images/back.png" width="30" height="30" alt="Voltar" />
+        </button>
+      </div>
+      <div class="align-self-center container mt-5">
+        <div class="mb-4">
+          <h4>Visualizar alimentação</h4>
+        </div>
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Calorias</th>
+            <th scope="col">Ações</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>01/05/2019</td>
+            <td>93</td>
+            <td><i class="fas fa-edit mr-3"></i><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td>02/05/2019</td>
+            <td>90</td>
+            <td><i class="fas fa-edit mr-3"></i><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td>03/05/2019</td>
+            <td>85</td>
+            <td><i class="fas fa-edit mr-3"></i><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          <tr>
+            <td>04/05/2019</td>
+            <td>87</td>
+            <td><i class="fas fa-edit mr-3"></i><i class="fas fa-trash-alt"></i></td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="row">
+          <button
+              type="button"
+              data-toggle="modal"
+              data-target="#feedingModal"
+              class="btn btn-success mb-4 w-100 mt-md-4 mr-4 ml-4"
+          >
+            Adicionar alimentação
+          </button>
+        </div>
+        <div class="modal fade" id="feedingModal" tabindex="-1" role="dialog" aria-labelledby="feedingModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="feedingModalTitle">Adicionar alimentação</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="weight">Calorias</label>
+                  <input type="number" class="form-control" id="weight" placeholder="Adicionar calorias">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

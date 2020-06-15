@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" >
+  <head>
+    <meta name="description" content="Health Track">
+    <meta name="author" content="João Escudero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Health Track</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+
+  <body class="h-100">
+    <div class="d-flex flex-column justify-content-center h-100">
+      <div class="settings">
+        <button
+            class="btn"
+            onclick="document.location.assign('settings.html')"
+        >
+          <img src="images/settings.png" width="30" height="30  " alt="Configurações" />
+        </button>
+      </div>
+      <div class="align-self-center container">
+        <div class="greeting mb-2">
+          <h4>Olá, João Escudero!</h4>
+        </div>
+        <div class="imc mb-4">
+          IMC: <span class="text-danger">25 (Sobrepeso)</span>
+        </div>
+        <div class="chart-container">
+          <div class="chart-title">
+            Variação de peso da ultima semana:
+          </div>
+          <div class="chart">
+            <div id="chart_div"></div>
+          </div>
+        </div>
+        <div class="row">
+          <button
+              class="btn btn-primary mb-4 w-100 mr-4 ml-4 mt-4"
+              onclick="document.location.assign('weighing.html')"
+          >
+            Visualizar pesagens
+          </button>
+        </div>
+        <div class="row">
+          <button
+              class="btn btn-primary mb-4 w-100 mt-md-4 mr-4 ml-4"
+              onclick="document.location.assign('feeding.html')"
+          >
+            Visualizar alimentações
+          </button>
+        </div>
+        <div class="row">
+          <button
+              class="btn btn-primary mb-4 w-100 mt-md-4 mr-4 ml-4"
+              onclick="document.location.assign('activities.html')"
+          >
+            Visualizar ativadades físicas
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/load-chart.js"></script>
+  </body>
+</html>
